@@ -272,6 +272,14 @@
       ]
     },
     {
+      "tag":"🎬 Bahamut",
+      "type":"selector",
+      "outbounds":[
+        "🇭🇰 台湾节点",
+        "✈️ 其他节点"
+      ]
+    },
+    {
       "tag":"🎬 MediaVideo",
       "type":"selector",
       "outbounds":[
@@ -504,7 +512,10 @@
         "rule_set": "geosite-nas",
         "outbound": "LocalNas"
       },
-
+      {
+        "rule_set": "geosite-bahamut",
+        "outbound": "Bahamut"
+      },
       {
         "rule_set": "geosite-openai",
         "outbound": "🤖 OpenAI"
@@ -670,6 +681,13 @@
         "type": "remote",
         "format": "source",
         "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/nas.json",
+        "download_detour": "direct"
+      },
+      {
+        "tag": "geosite-bahamut",
+        "type": "remote",
+        "format": "source",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/bahamut.json",
         "download_detour": "direct"
       },
       {
