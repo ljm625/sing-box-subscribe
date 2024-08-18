@@ -512,14 +512,6 @@
           "outbound": "Microsoft"
         },
         {
-          "rule_set": ["geosite-category-games", "geosite-dmm"],
-          "outbound": "Games"
-        },
-        {
-          "rule_set": ["geosite-hbo", "geosite-primevideo"],
-          "outbound": "Streaming"
-        },
-        {
           "rule_set": "geosite-steam",
           "outbound": "Steam"
         },
@@ -527,6 +519,14 @@
           "rule_set": "geosite-steamchina",
           "outbound": "China"
         },  
+        {
+          "rule_set": ["geosite-category-games", "geosite-dmm"],
+          "outbound": "Games"
+        },
+        {
+          "rule_set": ["geosite-hbo", "geosite-primevideo"],
+          "outbound": "Streaming"
+        },
         {
           "rule_set": "geosite-geolocation-!cn",
           "outbound": "Global"
