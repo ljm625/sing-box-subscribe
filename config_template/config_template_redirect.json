@@ -260,6 +260,20 @@
         ]
       },
       {
+        "tag":"Steam",
+        "type":"selector",
+        "outbounds":[
+          "Proxy",
+          "HongKong",
+          "TaiWan",
+          "Singapore",
+          "Japan",
+          "America",
+          "Others",
+          "direct"
+        ]
+      },
+      {
         "tag":"Games",
         "type":"selector",
         "outbounds":[
@@ -506,6 +520,14 @@
           "outbound": "Streaming"
         },
         {
+          "rule_set": "geosite-steam",
+          "outbound": "Steam"
+        },
+        {
+          "rule_set": "geosite-steamchina",
+          "outbound": "China"
+        },  
+        {
           "rule_set": "geosite-geolocation-!cn",
           "outbound": "Global"
         },
@@ -724,7 +746,21 @@
           "format": "binary",
           "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
           "download_detour": "direct"
-        }
+        },
+        {
+          "tag": "geosite-steam",
+          "type": "remote",
+          "format": "source",
+          "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steam.json",
+          "download_detour": "direct"
+        },
+        {
+          "tag": "geosite-steamchina",
+          "type": "remote",
+          "format": "source",
+          "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steamchina.json",
+          "download_detour": "direct"
+        }  
       ]
     }
   }
