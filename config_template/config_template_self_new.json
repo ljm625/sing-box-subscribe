@@ -485,7 +485,7 @@
         "outbound": "block"
       },
       {
-        "rule_set": ["geosite-category-ads-all"],
+        "rule_set": ["geosite-category-ads-all","geoip-antiad"],
         "outbound": "🛑 AdBlock"
       },
       {
@@ -619,6 +619,13 @@
       }
     ],
     "rule_set": [
+      {
+        "tag": "geoip-antiad",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/privacy-protection-tools/anti-ad.github.io@master/docs/anti-ad-sing-box.srs",
+        "download_detour": "direct"
+      },
       {
         "tag": "geoip-google",
         "type": "remote",
