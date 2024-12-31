@@ -456,7 +456,7 @@
             "outbound": "dns-out"
         },
         {
-          "rule_set": ["geosite-category-ads-all","geoip-antiad"],
+          "rule_set": ["geosite-category-ads-all"],
           "outbound": "AdBlock"
         },
         {
@@ -565,13 +565,6 @@
           "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
           "download_detour": "direct"
         },
-        {
-          "tag": "geoip-antiad",
-          "type": "remote",
-          "format": "binary",
-          "url": "https://testingcf.jsdelivr.net/gh/privacy-protection-tools/anti-ad.github.io@master/docs/anti-ad-sing-box.srs",
-          "download_detour": "direct"
-        },  
         {
           "tag": "geosite-openai",
           "type": "remote",
