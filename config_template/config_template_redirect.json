@@ -22,7 +22,7 @@
         {
           "tag": "remote",
           "address": "https://8.8.8.8/dns-query",
-          "detour": "proxy",
+          "detour": "Proxy",
           "strategy": "prefer_ipv4",
           "client_subnet": "180.168.1.118"
         },
