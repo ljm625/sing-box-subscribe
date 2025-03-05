@@ -22,7 +22,7 @@
       {
         "tag": "proxyDns",
         "address": "tls://8.8.8.8",
-        "detour": "Proxy"
+        "detour": "proxy"
       },
       {
         "tag": "localDns",
@@ -701,57 +701,57 @@
       {
         "tag": "geosite-wechat",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/Toperlock/sing-box-geosite@main/wechat.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/Toperlock/sing-box-geosite@main/wechat.srs",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-exchange",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/exchange.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/exchange.srs",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-steam",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steam.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steam.srs",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-steamchina",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steamchina.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steamchina.srs",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-nas",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/nas.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/nas.srs",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-bahamut",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/bahamut.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/bahamut.srs",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-playstore",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/playstore.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/playstore.srs",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-playstore-cn",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/playstore_cn.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/playstore_cn.srs",
         "download_detour": "direct"
       },
       {

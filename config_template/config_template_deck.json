@@ -336,15 +336,15 @@
       {
         "tag": "geosite-steam",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steam.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steam.srs",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-steamchina",
         "type": "remote",
-        "format": "source",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steamchina.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/steamchina.srs",
         "download_detour": "direct"
       },
       {
