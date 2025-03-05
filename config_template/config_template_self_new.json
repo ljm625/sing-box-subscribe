@@ -715,15 +715,15 @@
       {
         "tag": "geosite-playstore",
         "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/playstore.srs",
+        "format": "source",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/playstore.json",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-playstore-cn",
         "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/playstore_cn.srs",
+        "format": "source",
+        "url": "https://testingcf.jsdelivr.net/gh/ljm625/sing-box-geosite@main/rule/playstore_cn.json",
         "download_detour": "direct"
       },
       {
