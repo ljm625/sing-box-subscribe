@@ -521,10 +521,6 @@
           "outbound": "Steam"
         },
         {
-          "rule_set": "geosite-steamchina",
-          "outbound": "China"
-        },  
-        {
           "rule_set": ["geosite-category-games", "geosite-dmm"],
           "outbound": "Games"
         },
@@ -758,14 +754,7 @@
           "format": "binary",
           "url": "https://gh.debug.tech/https://raw.githubusercontent.com/ljm625/sing-box-geosite/main/rule/steam.srs",
           "download_detour": "direct"
-        },
-        {
-          "tag": "geosite-steamchina",
-          "type": "remote",
-          "format": "binary",
-          "url": "https://gh.debug.tech/https://raw.githubusercontent.com/ljm625/sing-box-geosite/main/rule/steamchina.srs",
-          "download_detour": "direct"
-        }  
+        }
       ]
     }
   }
