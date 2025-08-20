@@ -436,6 +436,13 @@
           "outbound": "dns-out"
         },
         {
+          "ip_cidr":[
+            "127.0.0.0/8",
+            "192.168.8.0/24"
+          ],
+          "outbound": "direct"
+        },
+        {
             "inbound": "dns-in",
             "outbound": "dns-out"
         },
