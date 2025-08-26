@@ -277,6 +277,20 @@
         ]
       },
       {
+        "tag":"Nintendo-Download",
+        "type":"selector",
+        "outbounds":[
+          "Proxy",
+          "HongKong",
+          "TaiWan",
+          "Singapore",
+          "Japan",
+          "America",
+          "Others",
+          "direct"
+        ]
+      },
+      {
         "tag":"Streaming",
         "type":"selector",
         "outbounds":[
@@ -465,6 +479,11 @@
           "outbound": "direct"
         },
         {
+          "rule_set": "geosite-nintendo-download",
+          "outbound": "Nintendo-Download"
+        },
+
+        {
           "rule_set": "geosite-openai",
           "outbound": "OpenAI"
         },
@@ -574,6 +593,13 @@
           "type": "remote",
           "format": "binary",
           "url": "https://gh.debug.tech/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs",
+          "download_detour": "direct"
+        },
+        {
+          "tag": "geosite-nintendo-download",
+          "type": "remote",
+          "format": "binary",
+          "url": "https://gh.debug.tech/https://raw.githubusercontent.com/ljm625/sing-box-geosite/main/rule/nintendo_download.srs",
           "download_detour": "direct"
         },
         {
