@@ -479,6 +479,12 @@
           "outbound": "direct"
         },
         {
+          "domain": [
+            "cooked-content-live-cdn.epicgames.com"
+          ],
+          "outbound": "Nintendo-Download"
+        },
+        {
           "rule_set": "geosite-nintendo-download",
           "outbound": "Nintendo-Download"
         },
