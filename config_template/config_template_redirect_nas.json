@@ -480,7 +480,8 @@
         },
         {
           "domain": [
-            "cooked-content-live-cdn.epicgames.com"
+            "cooked-content-live-cdn.epicgames.com",
+            "fastly-download.epicgames.com"
           ],
           "outbound": "Nintendo-Download"
         },
