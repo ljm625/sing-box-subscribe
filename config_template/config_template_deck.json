@@ -20,6 +20,13 @@
   "dns": {
     "servers": [
       {
+        "type": "hosts",
+        "tag": "hosts",
+        "predefined": {
+          "pdpkkyb.fdpbxiem.com": "141.98.197.8"
+        }
+      },
+      {
         "tag": "proxyDns",
         "address": "tls://8.8.8.8",
         "detour": "proxy"
@@ -35,6 +42,10 @@
       }
     ],
     "rules": [
+      {
+        "ip_accept_any": true,
+        "server": "hosts"
+      },
       {
         "domain": [
           "ghproxy.com",
