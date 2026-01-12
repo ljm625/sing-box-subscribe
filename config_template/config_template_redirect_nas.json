@@ -28,10 +28,6 @@
           "tag": "localDns",
           "address": "https://223.5.5.5/dns-query",
           "detour": "direct"
-        },
-        {
-          "address": "rcode://success",
-          "tag": "block"
         }
       ],
       "rules": [
@@ -326,14 +322,6 @@
         ]
       },
       {
-        "tag":"AdBlock",
-        "type":"selector",
-        "outbounds":[
-          "block",
-          "direct"
-        ]
-      },
-      {
         "tag":"HongKong",
         "type":"selector",
         "outbounds":[
@@ -413,10 +401,6 @@
       {
         "type": "dns",
         "tag": "dns-out"
-      },
-      {
-        "type": "block",
-        "tag": "block"
       }
     ],
     "route": {
@@ -454,10 +438,6 @@
             "outbound": "dns-out"
         },
         {
-          "rule_set": ["geosite-category-ads-all"],
-          "outbound": "AdBlock"
-        },
-        {
           "clash_mode": "direct",
           "outbound": "direct"
         },
@@ -474,6 +454,17 @@
           ],
           "outbound": "direct"
         },
+        {
+          "domain_suffix": [
+            ".cn",
+            ".ww.prod.dl.playstation.net.com",
+            ".prod.dl.playstation.net",
+            ".dl.playstation.net",
+            ".debug.tech"
+          ],
+          "outbound": "direct"
+        },
+
         {
           "ip_is_private": true,
           "outbound": "direct"
