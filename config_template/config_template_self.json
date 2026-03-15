@@ -454,10 +454,6 @@
       "tag": "direct"
     },
     {
-      "type": "dns",
-      "tag": "dns-out"
-    },
-    {
       "type": "socks",
       "tag": "blackhole-hack",
       "server": "127.0.0.1",
@@ -468,10 +464,6 @@
     "auto_detect_interface": true,
     "final": "proxy",
     "rules": [
-      {
-        "protocol": "dns",
-        "outbound": "dns-out"
-      },
       {
         "rule_set": ["geosite-category-ads-all"],
         "outbound": "🛑 AdBlock"
