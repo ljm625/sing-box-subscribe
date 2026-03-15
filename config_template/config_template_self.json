@@ -477,6 +477,10 @@
         "outbound": "🛑 AdBlock"
       },
       {
+        "domain":["services.googleapis.cn"],
+        "outbound": "🌌 Google"
+      },
+      {
         "clash_mode": "direct",
         "outbound": "direct"
       },
