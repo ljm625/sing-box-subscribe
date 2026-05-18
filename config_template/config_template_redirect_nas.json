@@ -13,8 +13,7 @@
         "default_mode": "rule"
       },
     "cache_file": {
-      "enabled": true,
-      "store_fakeip": false
+      "enabled": true
       }
     },
     "dns": {
@@ -31,10 +30,6 @@
         }
       ],
       "rules": [
-        {
-          "outbound": "any",
-          "server": "localDns"
-        },
         {
           "rule_set": "geosite-cn",
           "server": "localDns"
@@ -397,29 +392,32 @@
       {
         "type": "direct",
         "tag": "direct"
-      },
-      {
-        "type": "dns",
-        "tag": "dns-out"
       }
     ],
     "route": {
+    "default_domain_resolver": {
+      "server": "localDns"
+    },
       "auto_detect_interface": true,
       "final": "Proxy",
-      "rules": [
-        {
-          "type": "logical",
-          "mode": "or",
-          "rules":[
-            {
-              "port":53
-            },
-            {
-              "protocol": "dns"
-            }
-          ],
-          "outbound": "dns-out"
-        },
+    "rules": [
+      {
+        "inbound": ["tun-in", "mixed-in"],
+        "action": "sniff"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules":[
+          {
+            "port":53
+          },
+          {
+            "protocol": "dns"
+          }
+        ],
+        "action": "hijack-dns"
+      },
         {
           "domain":[
             "localhost"
