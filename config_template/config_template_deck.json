@@ -20,19 +20,15 @@
   "dns": {
     "servers": [
       {
-        "type": "tls",
         "tag": "proxyDns",
+        "type": "tls",
         "server": "8.8.8.8",
-        "server_port": 853,
         "detour": "proxy"
       },
       {
         "type": "https",
         "tag": "localDns",
-        "server": "223.5.5.5",
-        "server_port": 443,
-        "path": "/dns-query",
-        "detour": "direct"
+        "server": "223.5.5.5"
       }
     ],
     "rules": [
