@@ -162,13 +162,13 @@ pip install -r requirements.txt
 ### Put your subscription links in `providers.json`, edit `config_template_groups_tun.json` file and use the following command to run the script after editing the template:
 
 ```
-python main.py
+python generate_config.py
 ```
 
 or you can directly select the template with the  `template_index`, `0` means the first template(no flask doesn't support)
 
 ```
-python main.py --template_index=0
+python generate_config.py --template_index=0
 ```
 
 For Windows systems, it's recommended to add the commands to a batch program for execution.
@@ -248,7 +248,7 @@ In this file, you can add subscription links and basic settings.
 
     Local files with `.yaml` suffix, with the correct clash proxies fields filled in.
 
-    Local files need to be saved on the same drive. Local path formats: `/Desktop/sing-box-subscribe/xx.txt` or relative path formats in the same folder as `main.py`: `./xx.txt`.
+    Local files need to be saved on the same drive. Local path formats: `/Desktop/sing-box-subscribe/xx.txt` or relative path formats in the same folder as `generate_config.py`: `./xx.txt`.
 
 - `tag`: Required. Just keep the default.
 
