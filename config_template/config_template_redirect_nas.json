@@ -86,6 +86,18 @@
         ]
       },
       {
+        "tag":"GameUDP",
+        "type":"selector",
+        "outbounds":[
+          "Proxy",
+          "{all}"
+        ],
+        "filter":[
+          {"action":"include","keywords":["Game"]}
+        ]
+      },
+
+      {
         "tag":"OpenAI",
         "type":"selector",
         "outbounds":[
@@ -437,6 +449,10 @@
         {
           "clash_mode": "global",
           "outbound": "Proxy"
+        },
+        {
+        "network": "udp",
+        "outbound": "GameUDP"
         },
         {
           "domain": [
