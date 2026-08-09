@@ -118,6 +118,7 @@
         "type":"selector",
         "outbounds":[
           "proxy",
+          "direct",
           "{all}"
         ],
         "filter":[
@@ -320,13 +321,13 @@
         "action": "route"
       },
       {
+        "network": "udp",
+        "outbound": "GameUDP"
+      },
+      {
         "rule_set": "geosite-steamchina",
         "outbound": "🌏 cn",
         "action": "route"
-      },
-      {
-        "network": "udp",
-        "outbound": "GameUDP"
       },
       {
         "rule_set": "geosite-steam",
