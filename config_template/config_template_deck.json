@@ -117,7 +117,7 @@
         "tag":"GameUDP",
         "type":"selector",
         "outbounds":[
-          "Proxy",
+          "proxy",
           "{all}"
         ],
         "filter":[
