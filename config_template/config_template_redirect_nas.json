@@ -451,6 +451,16 @@
           "outbound": "Proxy"
         },
         {
+          "domain_suffix": [
+            ".cn",
+            ".ww.prod.dl.playstation.net.com",
+            ".prod.dl.playstation.net",
+            ".dl.playstation.net",
+            ".debug.tech"
+          ],
+          "outbound": "direct"
+        },
+        {
         "network": "udp",
         "outbound": "GameUDP"
         },
@@ -460,16 +470,6 @@
             "yacd.metacubex.one",
             "yacd.haishan.me",
             "d.metacubex.one"
-          ],
-          "outbound": "direct"
-        },
-        {
-          "domain_suffix": [
-            ".cn",
-            ".ww.prod.dl.playstation.net.com",
-            ".prod.dl.playstation.net",
-            ".dl.playstation.net",
-            ".debug.tech"
           ],
           "outbound": "direct"
         },
